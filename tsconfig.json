@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/Banner/index.tsx", "app/components/Courses/index.tsxs", "app/components/Mentor/index.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/Banner/index.tsx", "app/components/Courses/index.tsxs", "app/components/Mentor/index.js", "pages/page.js", "pages/api/submit.js", "app/components/submit/index.js", "app/components/yourComponent/index.js", "app/components/Detail/index.эыч", "app/components/Detail/index.js", "app/components/Ranking/myRate.js", "app/components/Ranking/starRating.js", "app/components/Search/index.js", "pages/infermatin.tsx"],
   "exclude": ["node_modules"]
 }

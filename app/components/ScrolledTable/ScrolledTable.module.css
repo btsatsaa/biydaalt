@@ -1,0 +1,27 @@
+.tableContainer {
+  max-height: 600px;
+  /* Set the maximum height of the table container */
+  overflow-y: auto;
+  /* Enable vertical scrolling if the table exceeds the container height */
+  border: 1px solid #ddd;
+  /* Add a border for aesthetics */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table thead {
+  position: sticky;
+  top: 0;
+  background-color: #f2f2f2;
+  /* Set a background color for the header */
+}

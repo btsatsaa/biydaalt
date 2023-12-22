@@ -1,18 +1,21 @@
 import Image from "next/image";
-
+import Link from "next/link";
+import { text } from "stream/consumers";
+import Courses from "../Courses/index";
+import { FcPortraitMode } from "react-icons/fc";
 const Banner = () => {
   return (
     <div id="home-section" className="bg-lightkblue">
-      <div className="mx-auto max-w-7xl pt-20 sm:pb-24 px-6">
+      <div className="mx-auto max-w-7xl pt-2 sm:pb-0 px-0">
         <div className="grid grid-cols-1 lg:grid-cols-12 space-x-1">
           <div className="col-span-6 flex flex-col justify-evenly">
             <div className="flex gap-2 mx-auto lg:mx-0">
-              <Image
+              {/* <Image
                 src="/assets/banner/check.svg"
                 alt="check-image"
                 width={20}
                 height={20}
-              />
+              /> */}
               <h3 className="text-kellygreen text-sm font-semibold text-center lg:text-start">
                 сургалтандаа бүртгүүлээд 10% хөнгөлөөрэй
               </h3>
@@ -25,7 +28,7 @@ const Banner = () => {
               бүтээнэ..
             </h3>
 
-            <div className="relative text-white focus-within:text-white flex flex-row-reverse input-shadow rounded-full pt-5 lg:pt-0">
+            {/* <div className="relative text-white focus-within:text-white flex flex-row-reverse input-shadow rounded-full pt-5 lg:pt-0">
               <input
                 type="Email address"
                 name="q"
@@ -36,7 +39,7 @@ const Banner = () => {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 pt-5 lg:pt-0">
                 <button
                   type="submit"
-                  className="p-3 lg:p-5 focus:outline-none focus:shadow-outline bg-ultramarine hover:bg-midnightblue duration-150 ease-in-out rounded-full"
+                  className="p-30 lg:p-5 focus:outline-none focus:shadow-outline bg-ultramarine hover:bg-midnightblue duration-150 ease-in-out rounded-full"
                 >
                   <Image
                     src={"/assets/banner/search.svg"}
@@ -46,7 +49,7 @@ const Banner = () => {
                   />
                 </button>
               </div>
-            </div>
+            </div> */}
 
             <div className="flex items-center justify-between pt-10 lg:pt-4">
               <div className="flex gap-2">
@@ -64,7 +67,6 @@ const Banner = () => {
               <div className="flex gap-2">
                 <Image
                   src="/assets/banner/check-circle.svg"
-                 
                   alt="check-image"
                   width={30}
                   height={30}
@@ -88,16 +90,30 @@ const Banner = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-6 flex justify-center">
-            <Image
+          <div
+            className="col-span-6 width={1600}
+              height={1600}  "
+          >
+            {/* <Image
+              // src="/assets/banner/banner_prev_ui.png"
               src="/assets/banner/mahila.png"
               alt="nothing"
-              width={1000}
-              height={805}
+              width={1200}
+              height={1000}
+            /> */}
+            <img
+              src={"/assets/banner/BBack.png"}
+              alt=""
+              className=" border: 2px solid #000 width={1600}
+              height={1600} "
             />
           </div>
         </div>
       </div>
+      {/* <div>
+        {" "}
+        <Courses />
+      </div> */}
     </div>
   );
 };
